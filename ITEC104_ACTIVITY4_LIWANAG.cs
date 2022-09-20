@@ -4,10 +4,11 @@ using System.Collections;
 class Program
 {
         static void Main() {
-        int[] num = new int[5];
+		
         int i=0;
-      	int[] even = new int[0];
-      	int[] odd = new int[0];
+      	int[] even = new int[0],
+      		  odd = new int[0],
+      		  num = new int[5];
         
         while(i!=num.Length){
             Console.Write("input number: ");
