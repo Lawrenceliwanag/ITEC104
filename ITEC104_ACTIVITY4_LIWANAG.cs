@@ -5,10 +5,14 @@ class Program
 {
         static void Main() {
 		
+	Console.WriteLine("number of int(s): ");
+	int x = int.Parse(Console.ReadLine());
+	Console.Clear();
+		
         int i=0;
-      	int[] even = new int[0],
-      		  odd = new int[0],
-      		  num = new int[5];
+      	int[]	even = new int[0],
+      	      	odd = new int[0],
+      		num = new int[x];
         
         while(i!=num.Length){
             Console.Write("input number: ");
@@ -34,6 +38,6 @@ class Program
       		Console.Write(item+" ");
       	}
       	
-      	Console.ReadLine();
+      	Console.Read();
     }
 }
