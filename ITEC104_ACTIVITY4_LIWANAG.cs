@@ -18,17 +18,19 @@ class Program
             Console.Write("input number: ");
             num[i] = Convert.ToInt32(Console.ReadLine());
             
-	            if(num[i]%2==0){
+	        if(num[i]%2==0){
             	Array.Resize(ref even, even.Length+1);
             	even[even.Length-1] = num[i];
-	            }
-	            else{
+	        }
+	        else{
             	Array.Resize(ref odd, odd.Length+1);
 	            odd[odd.Length-1] = num[i];	
-	            }
+	        }
+		
             Console.Clear();
             i++;
         }
+		
       	Console.Write("Even: ");
       	foreach(int item in even){
       		Console.Write(item+" ");
